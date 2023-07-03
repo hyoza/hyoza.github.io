@@ -1,0 +1,4 @@
+<meta name="appstore:developer_url" content="https://hyoza.github.io/TankDPSHeal/">
+<meta name="appstore:bundle_id" content="com.Hyoja.TankDPSHealerSurvival">
+<meta name="appstore:store_id" content="com.Hyoja.TankDPSHealerSurvival">
+google.com, pub-4426527906380288, DIRECT, f08c47fec0942fa0
