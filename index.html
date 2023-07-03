@@ -1,9 +1,245 @@
-<h1 id="tankdpsheal">TankDPSHeal</h1>
-<p>여러분과 Discord를 통해 대화하고 싶습니다.
-연락주세요~ 항상 기다리겠습니다.</p>
-<p><a href="https://discord.gg/cmbKXdXwEm">디스코드 주소</a>.</p>
-<h1 id="tankdpsheal-">TankDPSHeal 게임의 개인정보 처리방침.</h1>
-<p>랜덤 성장 디펜스는 아무런 권한을 요구하지 않으며, 개인정보를처리하지 않고, 개인을 식별 할 수 있는 정보를 저장하지 않습니다.</p>
-<p>게임 내에 저장하는 데이터는 게임 캐릭터 정보가 유일하며, 게임 캐릭터 정보는 익명이므로 개인을 구분 할 수 없습니다.</p>
-<p>사용자 간의 랭크를 비교하거나, 업적을 달성하기 위해 Google play games이나 Apple game center 제공하는 기능을 사용하기 위한 권한입니다.</p>
-<p>위의 용도 외에는 일체 다른 용도로 사용되지 않으며, 이 정책은 앞으로 변동되지 않음을 명시합니다.</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	
+<head>
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyoza Game</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      color: #000;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .testimonial {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 5rem;
+    }
+
+    h1 {
+      margin: 10px 0;
+    }
+
+    .line {
+      height: 2px;
+      width: 48rem;
+      background-color: #e26c4f;
+      margin-bottom: calc(3rem + 2vmin);
+    }
+
+    .arrow-wrapper {
+      position: relative;
+      width: 70%;
+      border-radius: 2rem;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      overflow: hidden;
+      place-items: center;
+    }
+
+    .review-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: calc(2rem + 1vmin);
+      width: 100%;
+    }
+
+    #imgBox {
+      border-radius: 25%;
+      width: calc(32rem + 5vmin);
+      height: calc(32rem + 5vmin);
+      position: relative;
+      background-size: cover;
+      margin-bottom: calc(1rem + 0.5vmin);
+    }
+
+    #name {
+      margin-bottom: calc(0.7rem + 0.5vmin);
+      font-size: calc(1rem + 0.5vmin);
+      letter-spacing: calc(0.1rem + 0.1vmin);
+      font-weight: bold;
+    }
+
+    #profession {
+      font-size: calc(0.8rem + 0.3vmin);
+      margin-bottom: calc(0.7rem + 0.5vmin);
+      color: #e26c4f;
+    }
+
+    #description {
+      font-size: calc(0.8rem + 0.3vmin);
+      width: 70%;
+      max-width: 40rem;
+      text-align: center;
+      margin-bottom: calc(1.4rem + 1vmin);
+      color: rgb(92, 92, 92);
+      line-height: 2rem;
+    }
+
+    .arrow {
+      width: calc(1.4rem + 0.6vmin);
+      height: calc(1.4rem + 0.6vmin);
+      border: solid #e26c4f;
+      border-width: 0 calc(0.5rem + 0.2vmin) calc(0.5rem + 0.2vmin) 0;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .arrow:hover {
+      transition: 0.3s;
+      transform: scale(1.15);
+    }
+
+    .left-arrow-wrap {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: rotate(135deg);
+    }
+
+    .right-arrow-wrap {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: rotate(-45deg);
+    }
+
+    @media screen and (max-width: 900px) {
+      .testimonial {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<header>
+    <header>
+    <Center><img src="Logo.jpg" height="300px" width="300px"></Center>
+  </header>
+</header>
+
+<body>
+  <div class="testimonial">
+    <h1>우리는 함께 야망을 게임으로 만듭니다.</h1>
+    <div class="line"></div>
+    <!-- arrow wrapper contains the review and the arrows -->
+    <div class="arrow-wrapper">
+      <!-- review section -->
+      <div id="reviewWrap" class="review-wrap">
+        <div id="imgBox"></div>
+        <div id="name"></div>
+        <div id="profession"></div>
+        <div id="description"></div>
+      </div>
+      <!-- left arrow -->
+      <div class="left-arrow-wrap">
+        <div class="arrow"></div>
+      </div>
+      <!-- right arrow -->
+      <div class="right-arrow-wrap">
+        <div class="arrow"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const reviewWrap = document.getElementById("reviewWrap");
+    const leftArrow = document.querySelector(".left-arrow-wrap .arrow");
+    const rightArrow = document.querySelector(".right-arrow-wrap .arrow");
+    const imgBox = document.getElementById("imgBox");
+    const name = document.getElementById("name");
+    const profession = document.getElementById("profession");
+    const description = document.getElementById("description");
+
+    let people = [{
+        photo: 'url("https://play-lh.googleusercontent.com/4lr7jBT7aBqTwkapWr68sFDm-1O63v-hfsfibTTTUUbrRHVZT-keLZcOZ8KYcO85Pw=w2560-h1440-rw")',
+        name: "탱딜힐 서바이벌 2023",
+        profession: "모바일 서바이벌 게임, 방치형 게임",
+        description: "탱커와 딜러와 힐러가 떠나는 판타지 모험. \r\n 모험을 떠날 영웅을 선택하고, 모험에서 얻은 골드와 아이템을 얻고, \r\n 영웅과 아이템, 스킬을 조합하고 강화하여 보스를 물리치는 게임!"
+      },
+      {
+        photo: "url('https://play-lh.googleusercontent.com/DH14xn9W5kMRjEGrVsg1gtJxgw5yej4xCZ8BoUq3Zr2QA3b4DIkPnrTIcEathB_Sg-o=w2560-h1440-rw')",
+        name: "랜덤 성장 디펜스 2015",
+        profession: "전략 시뮬레이션",
+        description: "한 정된 자원으로 유닛을 생산하고, 조합하여 밀려오는 적들을 물리치는 게임!"
+      }
+    ];
+
+    // set the first person
+    imgBox.style.backgroundImage = people[0].photo;
+    name.innerText = people[0].name;
+    profession.innerText = people[0].profession;
+    description.innerText = people[0].description;
+    let currentPerson = 0;
+
+    //Select the side where you want to slide
+    function slide(side, personNumber) {
+      let reviewWrapWidth = reviewWrap.offsetWidth + "px";
+      let descriptionHeight = description.offsetHeight + "px";
+      //(+ or -)
+      let side1symbol = side === "left" ? "" : "-";
+      let side2symbol = side === "left" ? "-" : "";
+
+      setTimeout(() => {
+        imgBox.style.backgroundImage = people[personNumber].photo;
+      }, 0);
+      setTimeout(() => {
+        description.style.height = descriptionHeight;
+      }, 100);
+      setTimeout(() => {
+        name.innerText = people[personNumber].name;
+      }, 200);
+      setTimeout(() => {
+        profession.innerText = people[personNumber].profession;
+      }, 300);
+      setTimeout(() => {
+        description.innerText = people[personNumber].description;
+      }, 400);
+    }
+
+    function setNextCardLeft() {
+      if (currentPerson === 2) {
+        currentPerson = 0;
+        slide("left", currentPerson);
+      } else {
+        currentPerson++;
+      }
+
+      slide("left", currentPerson);
+    }
+
+    function setNextCardRight() {
+      if (currentPerson === 0) {
+        currentPerson = 1;
+        slide("right", currentPerson);
+      } else {
+        currentPerson--;
+      }
+
+      slide("right", currentPerson);
+    }
+
+    leftArrow.addEventListener("click", setNextCardLeft);
+    rightArrow.addEventListener("click", setNextCardRight);
+  </script>
+</body>
+
+</html>
