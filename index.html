@@ -170,6 +170,12 @@
     const description = document.getElementById("description");
 
     let people = [{
+        photo: 'url("https://play-lh.googleusercontent.com/tVbf5XFDK_GGB9LQVP462qTAMvdK6b1NpFyJUIghQg3cb05wjkGEJIVJXJ5mfGCzF2R6=w2560-h1440-rw")',
+        name: "성장 랜덤 디펜스 2023",
+        profession: "모바일 디펜스 게임, 전략 시뮬레이션",
+        description: "한 정된 자원으로 유닛을 생산하고, 조합하여 밀려오는 적들을 물리치는 게임!",
+		linkURL: "https://hyoza.github.io/RandomDefence/"
+      },{
         photo: 'url("https://play-lh.googleusercontent.com/4lr7jBT7aBqTwkapWr68sFDm-1O63v-hfsfibTTTUUbrRHVZT-keLZcOZ8KYcO85Pw=w2560-h1440-rw")',
         name: "탱딜힐 서바이벌 2023",
         profession: "모바일 서바이벌 게임, 방치형 게임",
@@ -230,7 +236,7 @@
 
     function setNextCardRight() {
       if (currentPerson === 0) {
-        currentPerson = 1;
+        currentPerson = 2;
         slide("right", currentPerson);
       } else {
         currentPerson--;
