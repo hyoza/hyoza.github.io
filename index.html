@@ -170,6 +170,12 @@
     const description = document.getElementById("description");
 
     let people = [{
+        photo: 'url("https://play-lh.googleusercontent.com/ruCS5V7H481CvYYg1xmF4NWxxO_qMLngX9o4c785BANuN6w6wvDaVqRxo6mLtHCDIYA=w2560-h1440-rw")',
+        name: "버티의 머지 베이커리 : 머지 게임 2024",
+        profession: "머지 퍼즐, 캐주얼, 퍼즐",
+        description: "버티를 도와 동물 친구들에게 음식을 제공해주시는 게임!",
+		linkURL: "https://hyoza.github.io/BertieMergeBakery/"
+      },{
         photo: 'url("https://play-lh.googleusercontent.com/tVbf5XFDK_GGB9LQVP462qTAMvdK6b1NpFyJUIghQg3cb05wjkGEJIVJXJ5mfGCzF2R6=w2560-h1440-rw")',
         name: "성장 랜덤 디펜스 2023",
         profession: "모바일 디펜스 게임, 전략 시뮬레이션",
@@ -224,7 +230,7 @@
     }
 
     function setNextCardLeft() {
-      if (currentPerson === 2) {
+      if (currentPerson === 3) {
         currentPerson = 0;
         slide("left", currentPerson);
       } else {
@@ -236,7 +242,7 @@
 
     function setNextCardRight() {
       if (currentPerson === 0) {
-        currentPerson = 2;
+        currentPerson = 3;
         slide("right", currentPerson);
       } else {
         currentPerson--;
